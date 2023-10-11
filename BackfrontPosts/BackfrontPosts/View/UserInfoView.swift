@@ -11,7 +11,7 @@ struct UserInfoView: View {
     var body: some View {
         HStack(alignment: .center){
             ZStack{
-                Image("demo")
+                Image("logo-BF")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 90, height: 90)
@@ -35,21 +35,21 @@ struct UserInfoView: View {
             
             HStack(alignment: .center, spacing:30){
                 VStack(alignment: .center, spacing: 0){
-                    Text("71")
+                    Text("235")
                         .font(Font.system(size: 17, weight: .medium))
                     Text("Posts")
                         .font(.footnote)
                 }//: VSTACK
                 
                 VStack(alignment: .center, spacing: 0){
-                    Text("1,078")
+                    Text("2,748")
                         .font(Font.system(size: 17, weight: .medium))
                     Text("Followers")
                         .font(.footnote)
                 }//: VSTACK
                 
                 VStack(alignment: .center, spacing: 0){
-                    Text("83")
+                    Text("3,348")
                         .font(Font.system(size: 17, weight: .medium))
                     Text("Following")
                         .font(.footnote)

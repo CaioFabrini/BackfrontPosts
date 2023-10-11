@@ -11,15 +11,15 @@ struct UserProfileView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0){
             Divider()
-            Button(action:{
-                
-            }){
-                Text("View Professional Resources")
-                    .font(Font.system(size: 11, weight: .medium))
-                    .frame(width:.infinity)
-                    .padding(.vertical, 12)
-                    .padding(.horizontal, 30)
-            }
+//            Button(action:{
+//                
+//            }){
+//                Text("View Professional Resources")
+//                    .font(Font.system(size: 11, weight: .medium))
+//                    .frame(width:.infinity)
+//                    .padding(.vertical, 12)
+//                    .padding(.horizontal, 30)
+//            }
             Divider()
             VStack(alignment: .leading){
                 UserInfoView()
