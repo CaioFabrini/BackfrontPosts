@@ -15,6 +15,15 @@ struct MainView: View {
         UITabBar.appearance().barTintColor = .white
     }
     
+    private func tabBarItem(imageName: String, selectedImageName: String, tag: Int) -> some View {
+           return Image(imageName)
+               .resizable()
+               .renderingMode(.template)
+               .foregroundColor(selection == tag ? .black : .gray)
+               .frame(width: 30, height: 30)
+               .tag(tag)
+       }
+    
     // MARK:- BODY
     
     var body: some View {

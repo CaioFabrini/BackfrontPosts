@@ -34,7 +34,7 @@ struct ProfileView: View {
                 .navigationBarTitle("", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Text("dheeraj.iosdev")
+                        Text("backfrontacademy")
                             .font(Font.system(size: 22, weight: .bold))
                     }//: TOOLBAR ITEM LEFT
                     

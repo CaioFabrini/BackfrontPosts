@@ -23,13 +23,19 @@ struct UserProfileView: View {
             Divider()
             VStack(alignment: .leading){
                 UserInfoView()
-                Text("Dheeraj - iOS Developer")
+                Text("BackFront Academy")
                     .font(Font.system(size: 13, weight: .medium))
                     .padding(.top, 5)
                     .padding(.bottom, 1)
-                Text("👨‍💻 iOS Developer, UI / UX Designer\n🇮🇳 Himachal Pradesh, India\n📪 DM me for any query regarding iOS\n🔗Check out this link to buy coolors app👇")
+                
+                Text("School")
+                   .font(Font.system(size: 13, weight: .medium))
+                   .foregroundColor(Color(red:9/255, green:55/255, blue:107/255))
+                
+                Text("👇Seja o profissional mais procurado e bem remunerado do mercado de tecnologia")
                     .font(Font.system(size: 13, weight: .regular))
-                + Text("\ncampsite.bio/dheeraj.iosdev")
+                
+                 Text("\nbackfront.com.br/backfront-plus")
                     .font(Font.system(size: 13, weight: .medium))
                     .foregroundColor(Color(red:9/255, green:55/255, blue:107/255))
                 ProfileActionsView()
@@ -44,8 +50,5 @@ struct UserProfileView: View {
 struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
         UserProfileView()
-            .previewLayout(.sizeThatFits)
-            .padding(.horizontal, 15)
-            .padding(.vertical, 10)
     }
 }
