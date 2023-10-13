@@ -39,6 +39,7 @@
 		343016B22AD4A1510093FA8A /* ProfilePostsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016952AD4A1510093FA8A /* ProfilePostsData.swift */; };
 		343016B32AD4A1510093FA8A /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016962AD4A1510093FA8A /* StoryData.swift */; };
 		343016B42AD4A1510093FA8A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016972AD4A1510093FA8A /* PostData.swift */; };
+		C40CDA9E2AD95E2D00A752EF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		343016952AD4A1510093FA8A /* ProfilePostsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostsData.swift; sourceTree = "<group>"; };
 		343016962AD4A1510093FA8A /* StoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		343016972AD4A1510093FA8A /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,9 @@
 		343016632AD4A08F0093FA8A /* BackfrontPosts */ = {
 			isa = PBXGroup;
 			children = (
-				343016762AD4A1510093FA8A /* App */,
 				3430167D2AD4A1510093FA8A /* Model */,
+				C40CDA9C2AD95D7C00A752EF /* ViewModel */,
+				343016762AD4A1510093FA8A /* App */,
 				343016832AD4A1510093FA8A /* View */,
 				3430168F2AD4A1510093FA8A /* DemoVideo */,
 				343016922AD4A1510093FA8A /* Data */,
@@ -191,6 +194,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		C40CDA9C2AD95D7C00A752EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +276,7 @@
 			files = (
 				343016982AD4A1510093FA8A /* ProfileView.swift in Sources */,
 				343016A12AD4A1510093FA8A /* StaticListDataModel.swift in Sources */,
+				C40CDA9E2AD95E2D00A752EF /* ProfileViewModel.swift in Sources */,
 				3430169C2AD4A1510093FA8A /* MainView.swift in Sources */,
 				343016AA2AD4A1510093FA8A /* PlayerView.swift in Sources */,
 				343016A72AD4A1510093FA8A /* VideoPlayer.swift in Sources */,

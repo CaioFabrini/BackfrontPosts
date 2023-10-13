@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    // MARK:- PROPERTIES
+    @ObservedObject var viewModel: ProfileViewModel?
     
-    init(){
-        UINavigationBar.appearance().barTintColor = .white
-        UINavigationBar.appearance().shadowImage = UIImage()
+    init(viewModel: ProfileViewModel = ProfileViewModel()) {
+        self.viewModel = viewModel
+//        UINavigationBar.appearance().barTintColor = .white
+//        UINavigationBar.appearance().shadowImage = UIImage()
     }
     
     @State private var bottomSheetShown = false
@@ -26,8 +27,8 @@ struct ProfileView: View {
                 ScrollView(.vertical, showsIndicators: false){
                     VStack(alignment: .center, spacing: 0) {
                         UserProfileView()
-                        HighlightView(data: HighlightData)
-                        PostGridView(data: ProfilePostData)
+                        HighlightView(data: viewModel?.highlightData)
+                        PostGridView(data: viewModel?.profilePostData)
                             .padding(.horizontal, 2)
                     }//: VSTACK
                 }//: SCROLL
