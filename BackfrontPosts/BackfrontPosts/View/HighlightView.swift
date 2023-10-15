@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HighlightView: View {
     // MARK:- PROPERTIES
-    
+    var viewModel: ProfileViewModel = ProfileViewModel()
     let data: [HighlightDataModel]
         
     // MARK:- BODY
@@ -46,7 +46,7 @@ struct HighlightView: View {
 
 struct HighlightView_Previews: PreviewProvider {
     static var previews: some View {
-        HighlightView(data: HighlightData)
+        HighlightView(data: ProfileViewModel().loadHighlightData())
             .previewLayout(.sizeThatFits)
     }
 }

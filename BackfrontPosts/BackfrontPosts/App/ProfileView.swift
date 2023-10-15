@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @ObservedObject var viewModel: ProfileViewModel?
+    @ObservedObject var viewModel: ProfileViewModel = ProfileViewModel()
     
-    init(viewModel: ProfileViewModel = ProfileViewModel()) {
-        self.viewModel = viewModel
-//        UINavigationBar.appearance().barTintColor = .white
+//    init() {
+//        UINavigationBar.appearance().barTintColor = .black
 //        UINavigationBar.appearance().shadowImage = UIImage()
-    }
+//    }
     
     @State private var bottomSheetShown = false
     
@@ -27,8 +26,8 @@ struct ProfileView: View {
                 ScrollView(.vertical, showsIndicators: false){
                     VStack(alignment: .center, spacing: 0) {
                         UserProfileView()
-                        HighlightView(data: viewModel?.highlightData)
-                        PostGridView(data: viewModel?.profilePostData)
+                        HighlightView(data: viewModel.loadHighlightData())
+                        PostGridView(data: viewModel.loadProfilePostData())
                             .padding(.horizontal, 2)
                     }//: VSTACK
                 }//: SCROLL
@@ -43,21 +42,11 @@ struct ProfileView: View {
                         Button(action:{
                             bottomSheetShown.toggle()
                         }){
-                           Image("setting")
+                            Image(systemName: "line.3.horizontal")
                             .resizable()
-                            .scaledToFill()
-                            .frame(width: 22, height: 22)
+                            .foregroundColor(.black)
+                            .frame(width: 32, height: 22)
                         }
-//                        HStack(alignment: .center, spacing: 20){
-//                            Button(action:{
-//                                bottomSheetShown.toggle()
-//                            }){
-//                               Image("add2")
-//                                .resizable()
-//                                .scaledToFill()
-//                                .frame(width: 22, height: 22)
-//                            }
-//                        }
                     }//: TOOLBAR ITEM RIGHT
                 }
             }//: NAVIGATION
