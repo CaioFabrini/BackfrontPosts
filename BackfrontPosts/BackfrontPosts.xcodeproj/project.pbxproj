@@ -40,6 +40,7 @@
 		343016B32AD4A1510093FA8A /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016962AD4A1510093FA8A /* StoryData.swift */; };
 		343016B42AD4A1510093FA8A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016972AD4A1510093FA8A /* PostData.swift */; };
 		C40CDA9E2AD95E2D00A752EF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */; };
+		C40CDAA02ADC612D00A752EF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDA9F2ADC612D00A752EF /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		343016962AD4A1510093FA8A /* StoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		343016972AD4A1510093FA8A /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C40CDA9F2ADC612D00A752EF /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				343016802AD4A1510093FA8A /* StoryDataModel.swift */,
 				343016812AD4A1510093FA8A /* StaticListDataModel.swift */,
 				343016822AD4A1510093FA8A /* HighlightsDataModel.swift */,
+				C40CDA9F2ADC612D00A752EF /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40CDAA02ADC612D00A752EF /* Activity.swift in Sources */,
 				343016982AD4A1510093FA8A /* ProfileView.swift in Sources */,
 				343016A12AD4A1510093FA8A /* StaticListDataModel.swift in Sources */,
 				C40CDA9E2AD95E2D00A752EF /* ProfileViewModel.swift in Sources */,
