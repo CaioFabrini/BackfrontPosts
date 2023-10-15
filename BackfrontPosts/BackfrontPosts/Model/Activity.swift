@@ -9,16 +9,19 @@ import Foundation
 
 enum ActivityType {
     case liked
-    case newFollower
-    case suggestFollower
     case comment
+    case suggestFollower
+    case newFollower
 }
 
 struct Activity: Identifiable {
     let id = UUID()
-    let activity: ActivityType
-    let duration: String
     let usersInContext: [User]
-//    let post: Post
+    let duration: String
+    let activity: ActivityType
     var comment: String = ""
+    
+    func getUsernames() -> String {
+        return usersInContext.map{$0.userName}.joined(separator: ", ")
+    }
 }

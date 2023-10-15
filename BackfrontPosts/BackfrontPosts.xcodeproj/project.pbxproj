@@ -15,7 +15,6 @@
 		3430169A2AD4A1510093FA8A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016792AD4A1510093FA8A /* HomeView.swift */; };
 		3430169B2AD4A1510093FA8A /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167A2AD4A1510093FA8A /* ReelsView.swift */; };
 		3430169C2AD4A1510093FA8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167B2AD4A1510093FA8A /* MainView.swift */; };
-		3430169D2AD4A1510093FA8A /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167C2AD4A1510093FA8A /* ActivityView.swift */; };
 		3430169E2AD4A1510093FA8A /* ProfilePostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167E2AD4A1510093FA8A /* ProfilePostsModel.swift */; };
 		3430169F2AD4A1510093FA8A /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167F2AD4A1510093FA8A /* PostDataModel.swift */; };
 		343016A02AD4A1510093FA8A /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016802AD4A1510093FA8A /* StoryDataModel.swift */; };
@@ -42,6 +41,7 @@
 		C40CDA9E2AD95E2D00A752EF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */; };
 		C40CDAA02ADC612D00A752EF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDA9F2ADC612D00A752EF /* Activity.swift */; };
 		C40CDAA22ADC630A00A752EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDAA12ADC630A00A752EF /* User.swift */; };
+		C40CDAA42ADC652400A752EF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDAA32ADC652400A752EF /* ActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,6 @@
 		343016792AD4A1510093FA8A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3430167A2AD4A1510093FA8A /* ReelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		3430167B2AD4A1510093FA8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		3430167C2AD4A1510093FA8A /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		3430167E2AD4A1510093FA8A /* ProfilePostsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostsModel.swift; sourceTree = "<group>"; };
 		3430167F2AD4A1510093FA8A /* PostDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
 		343016802AD4A1510093FA8A /* StoryDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C40CDA9F2ADC612D00A752EF /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		C40CDAA12ADC630A00A752EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C40CDAA32ADC652400A752EF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,6 @@
 				343016792AD4A1510093FA8A /* HomeView.swift */,
 				3430167A2AD4A1510093FA8A /* ReelsView.swift */,
 				3430167B2AD4A1510093FA8A /* MainView.swift */,
-				3430167C2AD4A1510093FA8A /* ActivityView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -175,6 +174,7 @@
 				3430168C2AD4A1510093FA8A /* ProfileActionsView.swift */,
 				3430168D2AD4A1510093FA8A /* PostView.swift */,
 				3430168E2AD4A1510093FA8A /* StoryView.swift */,
+				C40CDAA32ADC652400A752EF /* ActivityView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,7 +292,6 @@
 				3430169B2AD4A1510093FA8A /* ReelsView.swift in Sources */,
 				3430169A2AD4A1510093FA8A /* HomeView.swift in Sources */,
 				343016A42AD4A1510093FA8A /* HighlightView.swift in Sources */,
-				3430169D2AD4A1510093FA8A /* ActivityView.swift in Sources */,
 				343016A22AD4A1510093FA8A /* HighlightsDataModel.swift in Sources */,
 				343016AC2AD4A1510093FA8A /* PostView.swift in Sources */,
 				3430169E2AD4A1510093FA8A /* ProfilePostsModel.swift in Sources */,
@@ -301,6 +300,7 @@
 				343016AB2AD4A1510093FA8A /* ProfileActionsView.swift in Sources */,
 				343016A82AD4A1510093FA8A /* BottomSheetView.swift in Sources */,
 				343016A92AD4A1510093FA8A /* PostGridView.swift in Sources */,
+				C40CDAA42ADC652400A752EF /* ActivityView.swift in Sources */,
 				343016AD2AD4A1510093FA8A /* StoryView.swift in Sources */,
 				343016652AD4A08F0093FA8A /* BackfrontPostsApp.swift in Sources */,
 				343016A62AD4A1510093FA8A /* UserProfileView.swift in Sources */,
