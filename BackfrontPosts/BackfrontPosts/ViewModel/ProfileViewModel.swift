@@ -15,6 +15,12 @@ class ProfileViewModel: ObservableObject {
     @Published private var profilePostData: [ProfilePostModel] = []
     
     
+    private var cancellables: Set<AnyCancellable> = []
+    
+    init() {
+        loadInitialData()
+    }
+    
     public func loadHighlightData() -> [HighlightDataModel] {
         return highlightData
     }
