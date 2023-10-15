@@ -17,8 +17,8 @@ enum ActivityType {
 struct Activity: Identifiable {
     let id = UUID()
     let activity: ActivityType
-    let duration: String //Mais fácil de mostrar na IU
-//    let usersInContext: [User]
+    let duration: String
+    let usersInContext: [User]
 //    let post: Post
     var comment: String = ""
 }
