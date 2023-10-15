@@ -13,7 +13,7 @@ class ProfileViewModel: ObservableObject {
     // MARK: - Published Properties
     @Published private var highlightData: [HighlightDataModel] = []
     @Published private var profilePostData: [ProfilePostModel] = []
-    @Published private var bottomSheetShown: Bool = false
+    @Published var bottomSheetShown: Bool = false
     
     private var cancellables: Set<AnyCancellable> = []
     

@@ -10,16 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @ObservedObject var viewModel: ProfileViewModel = ProfileViewModel()
-    
-    //    init() {
-    //        UINavigationBar.appearance().barTintColor = .black
-    //        UINavigationBar.appearance().shadowImage = UIImage()
-    //    }
-//    
-//    @State private var bottomSheetShown = false
-    
     // MARK:- BODY
-    
     var body: some View {
         ZStack {
             NavigationView {
@@ -63,10 +54,7 @@ struct ProfileView: View {
             
             GeometryReader { geometry in
                 BottomSheetView(
-                    isOpen: Binding(
-                        get: { self.viewModel.isBottomSheetShown() },
-                        set: { self.viewModel.setBottomSheetState($0) }
-                    ),
+                    isOpen: self.$viewModel.bottomSheetShown,
                     maxHeight: geometry.size.height * 0.7
                 ) {
                     SettingsView()
