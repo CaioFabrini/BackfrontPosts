@@ -13,7 +13,7 @@ class ProfileViewModel: ObservableObject {
     // MARK: - Published Properties
     @Published private var highlightData: [HighlightDataModel] = []
     @Published private var profilePostData: [ProfilePostModel] = []
-    
+    @Published private var bottomSheetShown: Bool = false
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -54,6 +54,21 @@ class ProfileViewModel: ObservableObject {
             ProfilePostModel(image: "thumb8", type: "video"),
             ProfilePostModel(image: "thumb9", type: "multiple")
         ]
-        
+    }
+    
+    public func isBottomSheetShown() -> Bool {
+        return bottomSheetShown
+    }
+    
+    func setBottomSheetState(_ isOpen: Bool) {
+        bottomSheetShown = isOpen
+    }
+    
+    public func showBottomSheet() {
+        bottomSheetShown = true
+    }
+    
+    public func hideBottomSheet() {
+        bottomSheetShown = false
     }
 }

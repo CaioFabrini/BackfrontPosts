@@ -11,12 +11,12 @@ struct ProfileView: View {
     
     @ObservedObject var viewModel: ProfileViewModel = ProfileViewModel()
     
-//    init() {
-//        UINavigationBar.appearance().barTintColor = .black
-//        UINavigationBar.appearance().shadowImage = UIImage()
-//    }
-    
-    @State private var bottomSheetShown = false
+    //    init() {
+    //        UINavigationBar.appearance().barTintColor = .black
+    //        UINavigationBar.appearance().shadowImage = UIImage()
+    //    }
+//    
+//    @State private var bottomSheetShown = false
     
     // MARK:- BODY
     
@@ -40,30 +40,33 @@ struct ProfileView: View {
                     
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action:{
-                            bottomSheetShown.toggle()
+                            viewModel.showBottomSheet()
                         }){
                             Image(systemName: "line.3.horizontal")
-                            .resizable()
-                            .foregroundColor(.black)
-                            .frame(width: 32, height: 22)
+                                .resizable()
+                                .foregroundColor(.black)
+                                .frame(width: 32, height: 22)
                         }
                     }//: TOOLBAR ITEM RIGHT
                 }
             }//: NAVIGATION
             
-            if bottomSheetShown {
+            if viewModel.isBottomSheetShown() {
                 Rectangle()
                     .fill(Color.black)
                     .opacity(0.7)
                     .edgesIgnoringSafeArea(.all)
                     .onTapGesture {
-                        bottomSheetShown.toggle()
+                        viewModel.hideBottomSheet()
                     }
             }
             
             GeometryReader { geometry in
                 BottomSheetView(
-                    isOpen: self.$bottomSheetShown,
+                    isOpen: Binding(
+                        get: { self.viewModel.isBottomSheetShown() },
+                        set: { self.viewModel.setBottomSheetState($0) }
+                    ),
                     maxHeight: geometry.size.height * 0.7
                 ) {
                     SettingsView()
