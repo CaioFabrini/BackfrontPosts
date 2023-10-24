@@ -11,7 +11,7 @@
 		3430166B2AD4A0910093FA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3430166A2AD4A0910093FA8A /* Assets.xcassets */; };
 		3430166E2AD4A0910093FA8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3430166D2AD4A0910093FA8A /* Preview Assets.xcassets */; };
 		343016982AD4A1510093FA8A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016772AD4A1510093FA8A /* ProfileView.swift */; };
-		343016992AD4A1510093FA8A /* AddMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016782AD4A1510093FA8A /* AddMediaView.swift */; };
+		343016992AD4A1510093FA8A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016782AD4A1510093FA8A /* NotificationView.swift */; };
 		3430169A2AD4A1510093FA8A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016792AD4A1510093FA8A /* HomeView.swift */; };
 		3430169B2AD4A1510093FA8A /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167A2AD4A1510093FA8A /* ReelsView.swift */; };
 		3430169C2AD4A1510093FA8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167B2AD4A1510093FA8A /* MainView.swift */; };
@@ -43,7 +43,7 @@
 		C40CDAA22ADC630A00A752EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDAA12ADC630A00A752EF /* User.swift */; };
 		C40CDAA42ADC652400A752EF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDAA32ADC652400A752EF /* ActivityView.swift */; };
 		C40CDAA82ADC6EC100A752EF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CDAA72ADC6EC100A752EF /* Post.swift */; };
-		C4700DDA2AE8221F00C0F2F4 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4700DD92AE8221F00C0F2F4 /* ActivityData.swift */; };
+		C4700DDC2AE82D4300C0F2F4 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4700DDB2AE82D4300C0F2F4 /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 		3430166A2AD4A0910093FA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3430166D2AD4A0910093FA8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		343016772AD4A1510093FA8A /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		343016782AD4A1510093FA8A /* AddMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMediaView.swift; sourceTree = "<group>"; };
+		343016782AD4A1510093FA8A /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		343016792AD4A1510093FA8A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3430167A2AD4A1510093FA8A /* ReelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		3430167B2AD4A1510093FA8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		C40CDAA12ADC630A00A752EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C40CDAA32ADC652400A752EF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		C40CDAA72ADC6EC100A752EF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		C4700DD92AE8221F00C0F2F4 /* ActivityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
+		C4700DDB2AE82D4300C0F2F4 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				343016772AD4A1510093FA8A /* ProfileView.swift */,
-				343016782AD4A1510093FA8A /* AddMediaView.swift */,
+				343016782AD4A1510093FA8A /* NotificationView.swift */,
 				343016792AD4A1510093FA8A /* HomeView.swift */,
 				3430167A2AD4A1510093FA8A /* ReelsView.swift */,
 				3430167B2AD4A1510093FA8A /* MainView.swift */,
@@ -201,7 +201,6 @@
 				343016952AD4A1510093FA8A /* ProfilePostsData.swift */,
 				343016962AD4A1510093FA8A /* StoryData.swift */,
 				343016972AD4A1510093FA8A /* PostData.swift */,
-				C4700DD92AE8221F00C0F2F4 /* ActivityData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -210,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				C40CDA9D2AD95E2D00A752EF /* ProfileViewModel.swift */,
+				C4700DDB2AE82D4300C0F2F4 /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -289,13 +289,13 @@
 				C40CDAA02ADC612D00A752EF /* Activity.swift in Sources */,
 				343016982AD4A1510093FA8A /* ProfileView.swift in Sources */,
 				343016A12AD4A1510093FA8A /* StaticListDataModel.swift in Sources */,
+				C4700DDC2AE82D4300C0F2F4 /* NotificationViewModel.swift in Sources */,
 				C40CDA9E2AD95E2D00A752EF /* ProfileViewModel.swift in Sources */,
 				C40CDAA22ADC630A00A752EF /* User.swift in Sources */,
 				3430169C2AD4A1510093FA8A /* MainView.swift in Sources */,
 				343016AA2AD4A1510093FA8A /* PlayerView.swift in Sources */,
 				343016A72AD4A1510093FA8A /* VideoPlayer.swift in Sources */,
 				343016B42AD4A1510093FA8A /* PostData.swift in Sources */,
-				C4700DDA2AE8221F00C0F2F4 /* ActivityData.swift in Sources */,
 				3430169B2AD4A1510093FA8A /* ReelsView.swift in Sources */,
 				3430169A2AD4A1510093FA8A /* HomeView.swift in Sources */,
 				C40CDAA82ADC6EC100A752EF /* Post.swift in Sources */,
@@ -314,7 +314,7 @@
 				343016A62AD4A1510093FA8A /* UserProfileView.swift in Sources */,
 				3430169F2AD4A1510093FA8A /* PostDataModel.swift in Sources */,
 				343016B02AD4A1510093FA8A /* SettingListData.swift in Sources */,
-				343016992AD4A1510093FA8A /* AddMediaView.swift in Sources */,
+				343016992AD4A1510093FA8A /* NotificationView.swift in Sources */,
 				343016B22AD4A1510093FA8A /* ProfilePostsData.swift in Sources */,
 				343016A02AD4A1510093FA8A /* StoryDataModel.swift in Sources */,
 				343016A32AD4A1510093FA8A /* SettingsView.swift in Sources */,

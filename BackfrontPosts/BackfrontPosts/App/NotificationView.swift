@@ -7,17 +7,20 @@
 
 import SwiftUI
 
-struct AddMediaView: View {
+struct NotificationView: View {
+    
+    @ObservedObject var viewModel: NotificationViewModel = NotificationViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                ForEach(ActivityData().activity) {
+                ForEach(viewModel.loadActivityData()) {
                     ActivityView(activity: $0)
                 }
             }
             .navigationBarTitle("", displayMode: .inline)
                 .toolbar(content: {
-                    Text("Activity")
+                    Text("Notifications")
                         .font(Font.system(size: 20, weight: .bold))
                         .padding()
                         .frame(width: UIScreen.main.bounds.size.width, alignment: .leading)
@@ -28,6 +31,7 @@ struct AddMediaView: View {
 
 struct AddMediaView_Previews: PreviewProvider {
     static var previews: some View {
-        AddMediaView()
+        NotificationView()
     }
 }
+

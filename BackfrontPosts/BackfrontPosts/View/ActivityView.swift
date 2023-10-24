@@ -102,8 +102,8 @@ struct LikedActivityView_Previews: PreviewProvider {
     static var previews: some View {
         ActivityView(activity: Activity(activity: .liked,
                                              duration: "5h",
-                                             usersInContext: [User(userName: "axeyked", userImage: "user_2")],
-                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post") , postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked")))
+                                             usersInContext: [User(userName: "gabrielmors_", userImage: "gabriel")],
+                                             post: Post(user: User(userName: "gabrielmors", userImage: "gabriel") , postImage: "gabrielmors", caption: "", likes: " ")))
     }
 }
 
@@ -111,8 +111,8 @@ struct LikedActivityView_Previews_Comment: PreviewProvider {
     static var previews: some View {
         ActivityView(activity: Activity(activity: .comment,
                                              duration: "5h",
-                                             usersInContext: [User(userName: "zendaya", userImage: "user_9")],
-                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
+                                             usersInContext: [User(userName: "gabrielmors", userImage: "gabriel")],
+                                             post: Post(user: User(userName: "gabriel", userImage: "gabriel"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
                                              comment: "@backfrontacademy ❤️🙏🏻"))
     }
 }
@@ -122,8 +122,8 @@ struct LikedActivityView_Previews_SuggestedFollower: PreviewProvider {
     static var previews: some View {
         ActivityView(activity: Activity(activity: .suggestFollower,
                                              duration: "6h",
-                                             usersInContext: [User(userName: "hiker.benn", userImage: "user_18")],
-                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
+                                             usersInContext: [User(userName: "gabrielmors", userImage: "gabriel")],
+                                             post: Post(user: User(userName: "gabriel", userImage: "gabriel"), postImage: "gabriel", caption: " ", likes: " "),
                                              comment: ""))
     }
 }
@@ -132,8 +132,8 @@ struct LikedActivityView_Previews_NewFollower: PreviewProvider {
     static var previews: some View {
         ActivityView(activity: Activity(activity: .newFollower,
                                              duration: "18h",
-                                             usersInContext: [User(userName: "power_of_shiva_99", userImage: "user_20")],
-                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
+                                             usersInContext: [User(userName: "gabriel", userImage: "gabriel")],
+                                             post: Post(user: User(userName: "gabrielmors", userImage: "gabriel"), postImage: "gabriel", caption: " ", likes: ""),
                                              comment: ""))
     }
 }

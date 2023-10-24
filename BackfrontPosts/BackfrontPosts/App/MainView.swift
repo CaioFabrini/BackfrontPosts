@@ -40,13 +40,13 @@ struct MainView: View {
                 }
                 .tag(1)
             
-            AddMediaView()
+            NotificationView()
                 .tabItem {
                     selection == 2 ? Image("add") : Image("add")
                 }
                 .tag(2)
             
-            AddMediaView()
+            NotificationView()
                 .tabItem {
                     selection == 3 ? Image("heart-selected") : Image("heart")
                 }

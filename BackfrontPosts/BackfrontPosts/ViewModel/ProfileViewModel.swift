@@ -10,7 +10,6 @@ import Combine
 
 class ProfileViewModel: ObservableObject {
     
-    // MARK: - Published Properties
     @Published private var highlightData: [HighlightDataModel] = []
     @Published private var profilePostData: [ProfilePostModel] = []
     @Published var bottomSheetShown: Bool = false
