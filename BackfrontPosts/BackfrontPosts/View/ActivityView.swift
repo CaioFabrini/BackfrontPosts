@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ActivityView: View {
+    
     let activity: Activity
     
     var body: some View {
@@ -21,14 +22,14 @@ struct ActivityView: View {
             if activity.activity == .liked {
                 Text(activity.getUsernames())
                     .font(Font.system(size: 12, weight: .semibold)) +
-                    Text(activity.usersInContext.count == 1 ? " liked your post. " : " and others liked your post. ")
+                    Text(activity.usersInContext.count == 1 ? " Curtiu sua publicação. " : " e outras pessoas gostaram da sua postagem. ")
                     .font(Font.system(size: 12, weight: .medium)) +
                     Text(activity.duration)
                     .font(Font.system(size: 10, weight: .light))
             } else if activity.activity == .comment {
                 Text(activity.getUsernames())
                     .font(Font.system(size: 12, weight: .semibold)) +
-                    Text(" mentioned you in a comment: ")
+                    Text(" Mencionou você em um comentário: ")
                     .font(Font.system(size: 12, weight: .medium)) +
                     Text((activity.comment))
                     .font(Font.system(size: 12, weight: .semibold)) +
@@ -38,7 +39,7 @@ struct ActivityView: View {
             else if activity.activity == .suggestFollower {
                 Text(activity.getUsernames())
                     .font(Font.system(size: 12, weight: .semibold)) +
-                    Text(" who you might know, is on Instagram. ")
+                    Text(" Quem você talvez conheça, está no Instagram. ")
                     .font(Font.system(size: 12, weight: .medium)) +
                     Text(activity.duration)
                     .font(Font.system(size: 10, weight: .light))
@@ -46,7 +47,7 @@ struct ActivityView: View {
             else if activity.activity == .newFollower {
                 Text(activity.getUsernames())
                     .font(Font.system(size: 12, weight: .semibold)) +
-                    Text(" started following you. ")
+                    Text(" Começou a seguir você. ")
                     .font(Font.system(size: 12, weight: .medium)) +
                     Text(activity.duration)
                     .font(Font.system(size: 10, weight: .light))
@@ -61,7 +62,7 @@ struct ActivityView: View {
                 }) {
                     HStack {
                         Spacer()
-                        Text("Follow")
+                        Text("Seguir")
                             .font(Font.system(size: 14, weight: .semibold))
                             .foregroundColor(.white)
                             .clipped()
@@ -74,8 +75,8 @@ struct ActivityView: View {
                 .clipped()
                 .cornerRadius(6)
             } else if activity.activity == .newFollower {
-                Button("Following") {
-                    print("Follow button clicked.")
+                Button("Seguindo") {
+                    print("Botão Seguir clicado.")
                 }
                 .font(Font.system(size: 14, weight: .semibold))
                 .padding()
@@ -97,6 +98,43 @@ struct ActivityView: View {
     }
 }
 
-#Preview {
-    ActivityView(activity: <#Activity#>)
+struct LikedActivityView_Previews: PreviewProvider {
+    static var previews: some View {
+        ActivityView(activity: Activity(activity: .liked,
+                                             duration: "5h",
+                                             usersInContext: [User(userName: "axeyked", userImage: "user_2")],
+                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post") , postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked")))
+    }
 }
+
+struct LikedActivityView_Previews_Comment: PreviewProvider {
+    static var previews: some View {
+        ActivityView(activity: Activity(activity: .comment,
+                                             duration: "5h",
+                                             usersInContext: [User(userName: "zendaya", userImage: "user_9")],
+                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
+                                             comment: "@backfrontacademy ❤️🙏🏻"))
+    }
+}
+
+
+struct LikedActivityView_Previews_SuggestedFollower: PreviewProvider {
+    static var previews: some View {
+        ActivityView(activity: Activity(activity: .suggestFollower,
+                                             duration: "6h",
+                                             usersInContext: [User(userName: "hiker.benn", userImage: "user_18")],
+                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
+                                             comment: ""))
+    }
+}
+
+struct LikedActivityView_Previews_NewFollower: PreviewProvider {
+    static var previews: some View {
+        ActivityView(activity: Activity(activity: .newFollower,
+                                             duration: "18h",
+                                             usersInContext: [User(userName: "power_of_shiva_99", userImage: "user_20")],
+                                             post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
+                                             comment: ""))
+    }
+}
+

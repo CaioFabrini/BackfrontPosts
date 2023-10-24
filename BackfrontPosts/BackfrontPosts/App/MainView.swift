@@ -11,9 +11,9 @@ struct MainView: View {
     // MARK:- PROPERTIES
     @State private var selection = 0
     
-    init(){
-        UITabBar.appearance().barTintColor = .white
-    }
+//    init(){
+//        UITabBar.appearance().barTintColor = .white
+//    }
     
     private func tabBarItem(imageName: String, selectedImageName: String, tag: Int) -> some View {
            return Image(imageName)
@@ -46,7 +46,7 @@ struct MainView: View {
                 }
                 .tag(2)
             
-            ActivityView()
+            AddMediaView()
                 .tabItem {
                     selection == 3 ? Image("heart-selected") : Image("heart")
                 }

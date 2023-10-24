@@ -9,7 +9,20 @@ import SwiftUI
 
 struct AddMediaView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(ActivityData().activity) {
+                    ActivityView(activity: $0)
+                }
+            }
+            .navigationBarTitle("", displayMode: .inline)
+                .toolbar(content: {
+                    Text("Activity")
+                        .font(Font.system(size: 20, weight: .bold))
+                        .padding()
+                        .frame(width: UIScreen.main.bounds.size.width, alignment: .leading)
+                })
+        }
     }
 }
 

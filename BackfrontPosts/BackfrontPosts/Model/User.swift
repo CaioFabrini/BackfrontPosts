@@ -9,6 +9,6 @@ import Foundation
 
 struct User: Identifiable {
     var id = UUID()
-    let userImage: String
     let userName: String
+    let userImage: String
 }
