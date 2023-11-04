@@ -2,7 +2,7 @@
 //  ProfileActionsView.swift
 //  InstagramClone
 //
-//  Created by Dheeraj Kumar Sharma on 09/12/20.
+//  Caio
 //
 
 import SwiftUI

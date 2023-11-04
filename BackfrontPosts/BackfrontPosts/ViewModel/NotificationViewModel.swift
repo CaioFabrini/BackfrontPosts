@@ -133,9 +133,5 @@ class NotificationViewModel: ObservableObject {
                      post: Post(user: User(userName: "  ", userImage: "  "), postImage: "  ", caption: "", likes: " ")),
         ]
     }
-    
-    
-    
-    
-    
+
 }

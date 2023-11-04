@@ -2,7 +2,7 @@
 //  PostView.swift
 //  InstagramClone
 //
-//  Created by Dheeraj Kumar Sharma on 02/12/20.
+//  Caio
 //
 
 import SwiftUI

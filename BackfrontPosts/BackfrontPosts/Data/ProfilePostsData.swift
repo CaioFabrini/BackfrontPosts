@@ -2,7 +2,7 @@
 //  ProfilePostsData.swift
 //  InstagramClone
 //
-//  Created by Dheeraj Kumar Sharma on 10/12/20.
+//  Caio
 //
 
 import Foundation

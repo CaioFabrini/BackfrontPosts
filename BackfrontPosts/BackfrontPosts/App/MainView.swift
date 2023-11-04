@@ -1,8 +1,8 @@
 //
 //  MainView.swift
-//  InstagramClone
+//  BackfrontPosts
 //
-//  Created by Dheeraj Kumar Sharma on 02/12/20.
+//  Caio
 //
 
 import SwiftUI
@@ -11,60 +11,30 @@ struct MainView: View {
     // MARK:- PROPERTIES
     @State private var selection = 0
     
-//    init(){
-//        UITabBar.appearance().barTintColor = .white
-//    }
-    
-    private func tabBarItem(imageName: String, selectedImageName: String, tag: Int) -> some View {
-           return Image(imageName)
-               .resizable()
-               .renderingMode(.template)
-               .foregroundColor(selection == tag ? .black : .gray)
-               .frame(width: 30, height: 30)
-               .tag(tag)
-       }
-    
     // MARK:- BODY
-    
     var body: some View {
-        TabView(selection: $selection){
+        TabView(selection: $selection,
+                content:  {
             HomeView()
                 .tabItem {
-                    selection == 0 ? Image("home-selected") : Image("home")
+                    Image(selection == 0 ? "home-selected" : "home")
                 }
                 .tag(0)
-            
-            ReelsView()
+            NotificationView()
                 .tabItem {
-                    selection == 1 ? Image("reels-selected") : Image("reels")
+                    Image(selection == 1 ? "add" : "add")
                 }
                 .tag(1)
             
-            NotificationView()
-                .tabItem {
-                    selection == 2 ? Image("add") : Image("add")
-                }
-                .tag(2)
-            
-            NotificationView()
-                .tabItem {
-                    selection == 3 ? Image("heart-selected") : Image("heart")
-                }
-                .tag(3)
-            
             ProfileView()
                 .tabItem {
-                    selection == 4 ? Image("user-selected") : Image("user")
+                    Image(selection == 2 ? "user-selected" : "user")
                 }
-                .tag(4)
-        }
+                .tag(2)
+        })
     }
 }
 
-
-// MARK:- PREVIEW
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
+#Preview {
+    MainView()
 }

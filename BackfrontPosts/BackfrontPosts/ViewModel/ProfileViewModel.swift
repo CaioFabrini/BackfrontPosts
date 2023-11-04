@@ -6,15 +6,13 @@
 //
 
 import Foundation
-import Combine
+
 
 class ProfileViewModel: ObservableObject {
     
     @Published private var highlightData: [HighlightDataModel] = []
     @Published private var profilePostData: [ProfilePostModel] = []
     @Published var bottomSheetShown: Bool = false
-    
-    private var cancellables: Set<AnyCancellable> = []
     
     init() {
         loadInitialData()

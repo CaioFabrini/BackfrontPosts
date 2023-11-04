@@ -13,7 +13,6 @@
 		343016982AD4A1510093FA8A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016772AD4A1510093FA8A /* ProfileView.swift */; };
 		343016992AD4A1510093FA8A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016782AD4A1510093FA8A /* NotificationView.swift */; };
 		3430169A2AD4A1510093FA8A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343016792AD4A1510093FA8A /* HomeView.swift */; };
-		3430169B2AD4A1510093FA8A /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167A2AD4A1510093FA8A /* ReelsView.swift */; };
 		3430169C2AD4A1510093FA8A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167B2AD4A1510093FA8A /* MainView.swift */; };
 		3430169E2AD4A1510093FA8A /* ProfilePostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167E2AD4A1510093FA8A /* ProfilePostsModel.swift */; };
 		3430169F2AD4A1510093FA8A /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430167F2AD4A1510093FA8A /* PostDataModel.swift */; };
@@ -54,7 +53,6 @@
 		343016772AD4A1510093FA8A /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		343016782AD4A1510093FA8A /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		343016792AD4A1510093FA8A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		3430167A2AD4A1510093FA8A /* ReelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		3430167B2AD4A1510093FA8A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3430167E2AD4A1510093FA8A /* ProfilePostsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostsModel.swift; sourceTree = "<group>"; };
 		3430167F2AD4A1510093FA8A /* PostDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				343016772AD4A1510093FA8A /* ProfileView.swift */,
 				343016782AD4A1510093FA8A /* NotificationView.swift */,
 				343016792AD4A1510093FA8A /* HomeView.swift */,
-				3430167A2AD4A1510093FA8A /* ReelsView.swift */,
 				3430167B2AD4A1510093FA8A /* MainView.swift */,
 			);
 			path = App;
@@ -296,7 +293,6 @@
 				343016AA2AD4A1510093FA8A /* PlayerView.swift in Sources */,
 				343016A72AD4A1510093FA8A /* VideoPlayer.swift in Sources */,
 				343016B42AD4A1510093FA8A /* PostData.swift in Sources */,
-				3430169B2AD4A1510093FA8A /* ReelsView.swift in Sources */,
 				3430169A2AD4A1510093FA8A /* HomeView.swift in Sources */,
 				C40CDAA82ADC6EC100A752EF /* Post.swift in Sources */,
 				343016A42AD4A1510093FA8A /* HighlightView.swift in Sources */,
