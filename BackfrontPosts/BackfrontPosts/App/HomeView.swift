@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var vm: HomeViewModel = HomeViewModel()
+
     // MARK:- BODY
     
     var body: some View {
@@ -18,7 +20,7 @@ struct HomeView: View {
                 HStack(spacing: 20.0) {
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVStack {
-                            ForEach(StoryData) { item in
+                            ForEach(vm.stories) { item in
                               StoryView(storyData: item)
                             }
                         }
@@ -29,8 +31,8 @@ struct HomeView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVStack(spacing: 20) {
-                            ForEach(PostData) { item in
-                              PostView(postData: item)
+                            ForEach($vm.posts) { item in
+                                PostView(postData: item, isMuted: $vm.isMuted)
                             }
                         }
                     }
@@ -53,6 +55,7 @@ struct HomeView: View {
                     HStack(alignment:.center, spacing: 25) {
                         Button(action:{
                             print("Go to Search")
+                            print(vm.posts[0].isSaved)
                         }){
                             Image("search")
                                 .resizable()
