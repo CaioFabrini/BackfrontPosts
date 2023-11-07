@@ -44,11 +44,11 @@ struct HomeView: View {
             .toolbarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Image("logo")
+                    Image("BF_Logo")
                         .renderingMode(.template)
                         .resizable()
-                        .scaledToFit()
-                        .frame(height:65)
+                        .scaledToFill()
+                        .frame(height: 90)
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
@@ -93,8 +93,6 @@ struct HomeView: View {
 
 // MARK:- PREVIEW
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+#Preview {
+    HomeView()
 }

@@ -26,7 +26,7 @@ struct PostView: View {
     // MARK:- BODY
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack(alignment: .center, spacing: 10) {
                 Image(postData.profileImage)
                     .resizable()
@@ -54,7 +54,7 @@ struct PostView: View {
             
             ZStack {
                 if !postData.isVideo {
-                    Image(postData.postImage)
+                    Image(postData.postImage ?? "error")
                         .resizable()
                         .scaledToFit()
                         .onTapGesture(count: 2) {
@@ -96,7 +96,7 @@ struct PostView: View {
                 }
                 
                 Button(action:{
-                   print("share button")
+                    print("share button")
                 }){
                     Image("share")
                         .resizable()
@@ -115,9 +115,9 @@ struct PostView: View {
                         .frame(width: 30, height: 30, alignment: .center)
                 }
             }
-            .padding(.vertical, 8)
+            .padding(.top, 8)
             .padding(.horizontal, 15)
-            if postData.caption != nil {
+            if !postData.caption.isEmpty {
                 Group {
                     Text(postData.userName)
                         .font(Font.system(size: 14, weight: .semibold))
@@ -125,8 +125,10 @@ struct PostView: View {
                     + Text(postData.caption)
                         .font(Font.system(size: 14))
                 }
+                .multilineTextAlignment(.leading)
                 .padding(.horizontal, 15)
-                .padding(.vertical, 6)
+                .padding(.top, 4)
+                .padding(.bottom, 10)
             }
         }
         .background(Color.white)
@@ -145,6 +147,6 @@ struct PostView: View {
 
 #Preview {
     @State var isMuted = true
-    @State var post = PostData[4]
+    @State var post = PostData[2]
     return PostView(postData: $post, isMuted: $isMuted)
 }

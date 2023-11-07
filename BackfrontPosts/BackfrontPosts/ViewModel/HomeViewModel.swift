@@ -7,28 +7,32 @@
 
 import SwiftUI
 
- @Observable class HomeViewModel {
+@Observable
+class HomeViewModel {
      
-    var isMuted: Bool = false
-
+    var isMuted: Bool = true
+    
     var posts: [PostDataModel] = [
-        PostDataModel(id: UUID(), profileImage: "youtubelogo", userName: "dheeraj.iosdev", location: nil, postImage: nil, dimensionImage: nil, isLiked: false, isSaved: true, likes: nil, caption: "Hi Guys! Today in design to code series I've come up with SwiftUI project hope it helps you!.", time: "2 hours ago", isSponsored: false, isVideo: true, dimensionVideo: Dimensions(width: 640, height: 636), videoUrl:"demo" , views: 1200),
+        PostDataModel(id: UUID(), profileImage: "logo-BF", userName: "BackFront", postImage: nil, isLiked: false, isSaved: true, caption: "Você acredita?", isVideo: true, videoUrl: "bfVideo"),
         
-        PostDataModel(id: UUID(), profileImage: "user1", userName: "shubham_iosdev", location: "Bengaluru - ( Karnataka ) India", postImage: "post1", dimensionImage: Dimensions(width: 1080, height: 1080), isLiked: false, isSaved: false, likes: 380, caption: "Hey guys, learning about Widgets today. With the help of widgets, you can provide information about your apps without even opening it. You can customize it however you like, and they come in three sizes. I felt that it was about time that I learned it.", time: "20 hours ago", isSponsored: false, isVideo: false, dimensionVideo: nil, videoUrl:nil, views: nil),
+        PostDataModel(id: UUID(), profileImage: "user3", userName: "Roberto", postImage: "dogs", isLiked: false, isSaved: false, caption: "Em meio a patas e sorrisos, cada latido é uma história de alegria contada sem palavras. 🐾❤️", isVideo: false, videoUrl:nil),
         
-        PostDataModel(id: UUID(), profileImage: "user2", userName: "martinsoft", location: "London, United Kingdom", postImage: "post2", dimensionImage: Dimensions(width: 1080, height: 1350), isLiked: false, isSaved: false, likes: 747, caption: "On the 3rd day of #postmas the Apple gods decided my iPhone 12 Pro should arrive early! 🤩", time: "2 months ago", isSponsored: false, isVideo: false, dimensionVideo: nil, videoUrl: nil, views: nil),
+        PostDataModel(id: UUID(), profileImage: "user2", userName: "Mario", postImage: "tesla", isLiked: false, isSaved: false, caption: "Mesmo chegando depois de concorrentes como a Rivian R1T e a Ford F-150 Lightning, os problemas da Cybertruck não se limitam aos anos de atraso. Mais de 2 milhões de pessoas fizeram reservas de US$ 100 e estão pedindo pedindo seu dinheiro de volta para Tesla", isVideo: false, videoUrl: nil),
         
-        PostDataModel(id: UUID(), profileImage: "youtubelogo", userName: "youtubecreatorsindia", location: nil, postImage: "youtube-post", dimensionImage: Dimensions(width: 1000, height: 1000), isLiked: false, isSaved: true, likes: 19822, caption: "Visit YouTube Creator Academy to get started with your channel and make your YouTube debut.", time: "", isSponsored: true, isVideo: false, dimensionVideo: nil, videoUrl:nil, views: nil),
+        PostDataModel(id: UUID(), profileImage: "youtubelogo", userName: "criadoresyoutubebrasil", postImage: "youtube-post", isLiked: false, isSaved: true, caption: "Visite a Academia de Criadores do YouTube para começar com seu canal e fazer sua estreia no YouTube.", isVideo: false, videoUrl:nil),
         
-        PostDataModel(id: UUID(), profileImage: "user2", userName: "dheeraj.iosdev", location: nil, postImage: "youtube-post", dimensionImage: nil, isLiked: false, isSaved: true, likes: nil, caption: "Hi Guys! Today in design to code series I've come up with SwiftUI project hope it helps you!.", time: "4 days ago", isSponsored: false, isVideo: true, dimensionVideo: Dimensions(width: 640, height: 640), videoUrl:"demo2" , views: 1200)
+        PostDataModel(id: UUID(), profileImage: "user5", userName: "Cleiton", postImage: "sonhos", isLiked: false, isSaved: false, caption: "Disseram que era impossível encontrar alguém que amasse mais a vista do que eu, mas claramente não viram a cara dela olhando para o cardápio de sobremesas! 🍰😍 ", isVideo: false, videoUrl:nil),
+        
+        PostDataModel(id: UUID(), profileImage: "user2", userName: "Mario", postImage: nil, isLiked: false, isSaved: true, caption: "Querem saber porque meus filmes se dão tão bem em matemática? Porque eles sabem somar carros, subtrair o trânsito, dividir as pistas e multiplicar a ação! E no final, sempre acabam encontrando a raiz quadrada perfeita...a família! 🚗💨", isVideo: true, videoUrl: "cars")
     ]
+
     
     var stories: [StoryDataModel] = [
-        StoryDataModel(image: "user1", name: "Your Story", isSeen: true, myStory:true ,myStoryActive: true),
-        StoryDataModel(image: "user1", name: "shubham_iosdev", isSeen: false, myStory:false ,myStoryActive: true),
-        StoryDataModel(image: "user2", name: "martinsoft", isSeen: false, myStory:false ,myStoryActive: false),
-        StoryDataModel(image: "user3", name: "edouard_iosdev", isSeen: false, myStory:false ,myStoryActive: false),
-        StoryDataModel(image: "user4", name: "ananjai04", isSeen: true, myStory:false ,myStoryActive: false),
+        StoryDataModel(image: "user1", name: "Seu story", myStory:true),
+        StoryDataModel(image: "user5", name: "Cleiton", myStory:false),
+        StoryDataModel(image: "user2", name: "Mario", myStory:false),
+        StoryDataModel(image: "user3", name: "Roberto", myStory:false),
+        StoryDataModel(image: "user4", name: "Julio", myStory:false),
     ]
     
     

@@ -23,7 +23,7 @@ struct StoryView: View {
                             .frame(width: 72, height: 72, alignment: .center)
                         Image(storyData.image)
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
                             .frame(width: 62, height: 62)
                             .clipShape(Circle())
                         if storyData.myStory {
@@ -52,6 +52,6 @@ struct StoryView: View {
 
 struct StoryView_Previews: PreviewProvider {
     static var previews: some View {
-        StoryView(storyData: StoryData[0])
+        StoryView(storyData: StoryData[3])
     }
 }

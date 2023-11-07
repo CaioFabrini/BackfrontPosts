@@ -22,7 +22,7 @@ struct MainView: View {
                 .tag(0)
             NotificationView()
                 .tabItem {
-                    Image(selection == 1 ? "add" : "add")
+                    Image("addButton")
                 }
                 .tag(1)
             
